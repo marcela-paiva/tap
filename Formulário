@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Atendimento</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <label for="resumo">Resumo:</label>
+        <textarea id="resumo" name="resumo" rows="4" cols="50"></textarea><br><br>
+
+        <label for="atendimento">Atendimento:</label>
+        <select id="atendimento" name="atendimento">
+            <option value="novo_circuito">Novo Circuito</option>
+            <option value="mudanca_endereco">Mudança de endereço</option>
+            <option value="migracao_servico">Migração de Serviço</option>
+            <option value="upgrade">Upgrade</option>
+            <option value="downgrade">Downgrade</option>
+            <option value="cancelamento">Cancelamento</option>
+            <option value="evento">Evento</option>
+            <option value="troca_titularidade">Troca de titularidade</option>
+            <option value="migracao_north">Migração de circuito para North</option>
+            <option value="permuta">Permuta</option>
+            <option value="redundancia_fisica">Redundância física</option>
+            <option value="alteracao_logica">Alteração de configuração lógica</option>
+        </select><br><br>
+
+        <label for="num_contrato">Nº contrato Sankhya:</label>
+        <input type="text" id="num_contrato" name="num_contrato"><br><br>
+
+        <label for="servico_velocidade">Serviço + Velocidade:</label>
+        <input type="text" id="servico_velocidade" name="servico_velocidade"><br><br>
+
+        <label for="categoria_cliente">Categoria do cliente:</label>
+        <select id="categoria_cliente" name="categoria_cliente">
+            <option value="b2b">B2B</option>
+            <option value="gov">GOV</option>
+            <option value="isp">ISP</option>
+            <option value="operadora">OPERADORA</option>
+        </select><br><br>
+
+        <label for="valor_mensal">Valor mensal (R$):</label>
+        <input type="text" id="valor_mensal" name="valor_mensal" pattern="^\d+(\,\d{1,2})?$" placeholder="0,00"><br><br>
+
+        <label for="materiais_comodato">Materiais em comodato:</label>
+        <input type="text" id="materiais_comodato" name="materiais_comodato"><br><br>
+
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao" rows="4" cols="50"></textarea><br><br>
+
+        <label for="data_cadastro">Data cadastro:</label>
+        <input type="date" id="data_cadastro" name="data_cadastro"><br><br>
+
+        <label for="data_limite">Data limite:</label>
+        <input type="date" id="data_limite" name="data_limite"><br><br>
+
+        <label for="rep_comercial">Rep. Comercial:</label>
+        <select id="rep_comercial" name="rep_comercial">
+            <option value="bruno">BRUNO</option>
+            <option value="juliana">JULIANA</option>
+            <option value="larah">LARAH</option>
+            <option value="maria_cecilia">MARIA CECILIA</option>
+            <option value="marina">MARINA</option>
+            <option value="paulo_braick">PAULO BRAICK</option>
+            <option value="rafael_fias">RAFAEL FIAS</option>
+            <option value="sandra">SANDRA</option>
+            <option value="thomaz">THOMAZ</option>
+            <option value="wendell">WENDELL</option>
+        </select><br><br>
+
+        <label for="abordagem_a">Abordagem (Ponta A):</label>
+        <select id="abordagem_a" name="abordagem_a">
+            <option value="cliente">LANÇAMENTO FEITO PELO CLIENTE</option>
+            <option value="empresa">LANÇAMENTO FEITO PELA EMPRESA</option>
+        </select><br><br>
+
+        <label for="pop_a">POP Ponta A:</label>
+        <input type="text" id="pop_a" name="pop_a"><br><br>
+
+        <label for="endereco_a">Endereço Ponta A:</label>
+        <input type="text" id="endereco_a" name="endereco_a"><br><br>
+
+        <label for="distancia_a">Distância do enlace entre o POP e Ponta A:</label>
+        <input type="number" id="distancia_a" name="distancia_a"><br><br>
+
+        <label for="abordagem_b">Abordagem - Ponta B:</label>
+        <select id="abordagem_b" name="abordagem_b">
+            <option value="cliente">LANÇAMENTO FEITO PELO CLIENTE</option>
+            <option value="empresa">LANÇAMENTO FEITO PELA EMPRESA</option>
+        </select><br><br>
+
+        <label for="pop_b">POP Ponta B:</label>
+        <input type="text" id="pop_b" name="pop_b"><br><br>
+
+        <label for="endereco_b">Endereço Ponta B:</label>
+        <input type="text" id="endereco_b" name="endereco_b"><br><br>
+
+        <label for="distancia_b">Distância do enlace entre o POP e Ponta B:</label>
+        <input type="number" id="distancia_b" name="distancia_b"><br><br>
+
+        <label for="abordagem_c">Abordagem (Ponta C):</label>
+        <select id="abordagem_c" name="abordagem_c">
+            <option value="cliente">LANÇAMENTO FEITO PELO CLIENTE</option>
+            <option value="empresa">LANÇAMENTO FEITO PELA EMPRESA</option>
+        </select><br><br>
+
+        <label for="endereco_c">Endereço cliente Ponta C:</label>
+        <input type="text" id="endereco_c" name="endereco_c"><br><br>
+
+        <label for="pop_c">POP Ponta C:</label>
+        <input type="text" id="pop_c" name="pop_c"><br><br>
+
+        <label for="contato_tecnico">Contato técnico do cliente:</label>
+        <input type="tel" id="contato_tecnico" name="contato_tecnico"><br><br>
+
+        <!-- Aqui virá o restante dos campos para migração de serviço, DRE, etc... -->
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
